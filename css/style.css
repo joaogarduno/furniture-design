@@ -25,10 +25,20 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
-/* HTML5 display-role reset for older browsers */ /* SE AGREGA LA ETIQUETA  */
+/* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section div {
+footer, header, hgroup, menu, nav, section {
 	display: block;
+}
+/* LINEA QUE SE COLOCA */
+header,
+nav,
+main,
+section,
+article,
+aside,
+footer{
+    width: 100%;
 }
 /* CAMBIOS EN EL RESET HTML Y BODY -> HECHOS POR MI */
 /* body {
@@ -101,6 +111,60 @@ table {
     display: block;
     width: 100%;
 }
-
-
-
+/* ===============================================
+    NAV - CONTENT
+==================================================*/
+.navContent{
+    position: relative;
+}
+.navContent .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* LOGO */
+.navContent .logo{
+    outline: 1px solid red;
+    font-size: 4.1rem;
+    text-transform: capitalize;
+    letter-spacing: 1.5;
+}
+/* .navContent .logo h1{} */
+/* .navContent .logo h1 a{} */
+/* BURGER */
+.navContent .burger{
+    outline: 1px solid red;
+    display: block;
+    cursor: pointer;
+}
+.navContent .burger .line{
+    background-color: black;
+    margin: 5px;
+    width: 25px;
+    height: 3px;
+}
+/* MENU */
+.navContent .menu{
+    /* rgb(168, 168, 168) */
+    background-color: rgba(168, 168, 168, 1.0);
+    outline: 1px solid red;
+    position: absolute;
+    top: 4rem;
+    right: 0;
+    width: 75%;
+    z-index: 1000;
+}
+.navContent .menu ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.navContent .menu ul li{
+    font-size: 2.5rem;
+    text-transform: capitalize;
+}
+.navContent .menu ul li a{
+    color: salmon;
+    font-weight: bold;
+    letter-spacing: 1.5;
+}
