@@ -1,24 +1,106 @@
-/* *{
+*, ::after, ::before{
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
 }
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	/* font-size: 100%; */
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */ /* SE AGREGA LA ETIQUETA  */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section div {
+	display: block;
+}
+/* CAMBIOS EN EL RESET HTML Y BODY -> HECHOS POR MI */
+/* body {
+	line-height: 1;
+} */
 html{
     font-size: 62.5%;
 }
 body{
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 1.6rem;
-    background-color: darkorange;
-    color: crimson;
+    line-height: 1.6;
+
 }
+/* AGREGE ESTAS LINEAS DE CODIGO */
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 2.5rem;
+    font-weight: bolder;
+}
+ol, ul {
+	list-style: none;
+}
+/* AGREGE ESTA LINEA AL RESET <a></a> */
+a{
+    text-decoration: none;
+}
+/* AGREGE ESTA LINEA DE CODIGO NUMERO 60 */
+img{
+    max-width: 100%;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* ===============================================
+    CONTAINER
+==================================================*/
 .container{
     margin: 0 auto;
     padding: 0 15px;
-    width: 95%;
+    width: 100%;
 }
-header{
+/* ===============================================
+    SECTION'S
+==================================================*/
+.sectionContent{
+    margin: 40px 0;
+}
+/* ===============================================
+    ARTICLES
+==================================================*/
+/* .articleContent{} */
+/* ===============================================
+    ROW & COL
+==================================================*/
+.row-container{
+    display: block;
+    width: 100%;
+}
+.col-container{
+    display: block;
+    width: 100%;
+}
 
-}
-nav{
-    position: absolute;
-} */
+
+
