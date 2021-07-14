@@ -1,3 +1,11 @@
+/*
+COLORES DEL PROYECTO
+#8F642F
+#1D1B20
+#E4c392
+#311E0B
+#311EOB
+*/
 *, ::after, ::before{
     box-sizing: border-box;
 }
@@ -206,3 +214,86 @@ table {
 /* ===============================================
     HEADER - BANNER -> TEST NAME
 ==================================================*/
+.headerContent{
+    background-color: rgba(168, 168, 168, 0.3);
+    position: relative;
+}
+.headerContent .bannerContent{}
+/* .headerContent .bannerContent .row-content{} */
+/* .headerContent .bannerContent .row-content .col-content{} */
+.headerContent .bannerContent .row-content .col-content .banner__info{
+    outline: 1px solid red;
+    /* z-index: 50; */
+    /* padding: 10px; */
+}
+.headerContent .bannerContent .row-content .col-content .banner__info h2{
+    padding: 5px;
+}
+.headerContent .bannerContent .row-content .col-content .banner__info h2::before{
+    content: '|';
+}
+.headerContent .bannerContent .row-content .col-content .banner__info h6{
+    outline: 1px solid red;
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+.headerContent .bannerContent .row-content .col-content .banner__info a{}
+/* FIGURE -  */
+.headerContent .bannerContent .row-content .col-content .geometry-form{
+    outline: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: space-evenly; */
+    /* position: absolute; */
+    position: absolute;
+    top: 5.0rem;
+    right: 0;
+    width: 50%;
+    z-index: 0;
+}
+.headerContent .bannerContent .row-content .col-content .geometry-form .geometry-line{
+    /* outline: 1px solid red; */
+    /* width: 100px; */
+    /* height: 30px; */
+    margin: 5px;
+    background-color: rgba(248, 162, 41, 0.6);
+    /* border-radius: 20px 200px 100px 20px; */
+    /* border-radius: 10px 10px 20px 10px; */
+}
+.headerContent .bannerContent .row-content .col-content .geometry-form .geometry1{
+    align-self: flex-end;
+    height: 40px;
+    width: 40px;
+    border-radius: 50px 20px 20px 20px;
+}
+.headerContent .bannerContent .row-content .col-content .geometry-form .geometry2{
+    align-self: center;
+    height: 80px;
+    width: 80px;
+    /* border-radius: 30px 200px 200px 200px; */
+    border-radius: 200px 30px 200px 200px;
+}
+/* .headerContent .bannerContent .row-content .col-content .geometry-form .geometry3{
+    align-self: flex-end;
+    height: 30px;
+    width: 80%;
+} */
+/* IMG */
+.headerContent .bannerContent .row-content .col-content figure{
+    /* position: absolute; */
+    /* rgb(248, 162, 41) */
+    background-color: rgba(248, 162, 41, 0.6);
+    /* border-radius: 500px 300px 700px 1000px; */
+    /* border-radius: 500px 1000px 700px 1000px; */
+    border-radius: 900px 300px 1000px 1000px;
+    padding: 20px;
+    border-style: groove;
+    /* border-radius: 10px -30px 15px 80px; */
+}
+.headerContent .bannerContent .row-content .col-content figure img{
+    /* border-radius: 100px 300px 60px 80px */
+    /* border-radius: 100px 300px; */
+    /* border-radius: 500px 300px 700px 1000px; */
+    border-radius: 500px 300px 400px 300px;
+}
