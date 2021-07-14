@@ -44,14 +44,17 @@ footer{
 /* body {
 	line-height: 1;
 } */
+/* AGREGE ESTA LINEA */
 html{
     font-size: 62.5%;
 }
+/* HICE CAMBIOS EN ESTA */
 body{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.6rem;
     line-height: 1.6;
-
+    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 /* AGREGE ESTAS LINEAS DE CODIGO */
 h1, h2, h3, h4, h5, h6{
@@ -94,6 +97,7 @@ table {
     SECTION'S
 ==================================================*/
 .sectionContent{
+    outline: 1px solid red;
     margin: 40px 0;
 }
 /* ===============================================
@@ -115,6 +119,7 @@ table {
     NAV - CONTENT
 ==================================================*/
 .navContent{
+
     position: relative;
 }
 .navContent .container{
@@ -123,7 +128,7 @@ table {
     align-items: center;
 }
 /* LOGO */
-.navContent .logo{
+.navContent .nav__logo{
     outline: 1px solid red;
     font-size: 4.1rem;
     text-transform: capitalize;
@@ -132,20 +137,36 @@ table {
 /* .navContent .logo h1{} */
 /* .navContent .logo h1 a{} */
 /* BURGER */
-.navContent .burger{
+.navContent .nav__burger{
     outline: 1px solid red;
     display: block;
     cursor: pointer;
 }
-.navContent .burger .line{
+.navContent .nav__burger .line{
     background-color: black;
     margin: 5px;
-    width: 25px;
     height: 3px;
+    width: 25px;
+    transition: all 0.3s ease;
 }
 /* MENU */
-.navContent .menu{
-    /* rgb(168, 168, 168) */
+/* rgb(168, 168, 168) */
+.navContent .nav__ul{
+    outline: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    top: 4rem;
+    right: 0;
+    height: 80vh;
+    width: 65vw;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+    /* z-index: 1000; */
+}
+/* .navContent .menu{
     background-color: rgba(168, 168, 168, 1.0);
     outline: 1px solid red;
     position: absolute;
@@ -153,12 +174,12 @@ table {
     right: 0;
     width: 75%;
     z-index: 1000;
-}
-.navContent .menu ul{
+} */
+/* .navContent .menu ul{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-}
+} */
 .navContent .menu ul li{
     font-size: 2.5rem;
     text-transform: capitalize;
@@ -168,3 +189,20 @@ table {
     font-weight: bold;
     letter-spacing: 1.5;
 }
+/* CALL - MENU ACTIVE */
+.nav-active{
+    transform: translateX(0%);
+}
+/* TOGGLE BURGER - LINES */
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+.toggle .line2{
+    opacity: 0;
+}
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px,-6px);
+}
+/* ===============================================
+    HEADER - BANNER -> TEST NAME
+==================================================*/
