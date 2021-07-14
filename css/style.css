@@ -1,7 +1,7 @@
 /*
 COLORES DEL PROYECTO
 #8F642F
-#1D1B20
+#F8A229 -> #1D1B20
 #E4c392
 #311E0B
 #311EOB
@@ -146,6 +146,7 @@ table {
     letter-spacing: 1.5px;
 }
 .navContent .nav__logo h1 a{
+    color: black;
     /* letter-spacing: .5; */
 }
 /* BURGER */
@@ -216,7 +217,6 @@ table {
 .toggle .line3{
     transform: rotate(45deg) translate(-5px,-6px);
 }
-<<<<<<< HEAD
 /* ===============================================
     HEADER - BANNER -> TEST NAME
 ==================================================*/
@@ -302,7 +302,7 @@ table {
     /* border-radius: 100px 300px; */
     /* border-radius: 500px 300px 700px 1000px; */
     border-radius: 500px 300px 400px 300px;
-=======
+}
 /* ======================================================
     MEDIAQUERIES
 ========================================================= */
@@ -333,5 +333,4 @@ table {
     .container{
         width: 90%;
     }
->>>>>>> navMenu
 }
