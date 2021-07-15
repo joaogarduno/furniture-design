@@ -1,4 +1,5 @@
-// 
+// PROJECT NAME: postElement
+// MENU SLIDE - navMenu
 const navSlide = () => {
     const burger = document.querySelector('.nav__burger');
     const nav = document.querySelector('.nav__ul')
