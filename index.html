@@ -5,7 +5,7 @@ DESIGN BY: Joao Ivan Garduño Salgado
 DATE: 10-jul-2021
 VERSION: 1.0
 
-PROJECT NAME: postElement
+PROJECT NAME: Furniture Design
 DESCRIPTION: Order of elements and contents
 RELEASE DATE: 
 
@@ -14,67 +14,64 @@ RELEASE DATE:
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0,maximum-scale=1.0 ">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Position Elements | Content</title>
+    <meta name="viewport" content="width=device-width user-scalable=no initial-scale=1.0 minimum-scale=1.0 maximum-scale=1.0">
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- ICONS -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <!-- STYLE -->
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Furniture Design | Al</title>
 </head>
 <body id="home">
-    <!-- NAV -->
-    <nav class="navContent">
-        <div class="container">
-            <div class="nav__logo">
-                <h1 class="navLogo__h1"><a class="navLogo__a" href="">Lorem</a></h1>
-            </div>
-            <div class="nav__burger">
-                <div class="line line1"></div>
-                <div class="line line2"></div>
-                <div class="line line3"></div>
-            </div>
-            <ul class="nav__ul">
-                <li><a href="#home">home</a></li>
-                <li><a href="#about">about</a></li>
-                <li><a href="#service">services</a></li>
-                <li><a href="#blog">blog</a></li>
-                <li><a href="#contact">contact</a></li>
-            </ul>
-            <!-- <div class="menu">
-                <ul>
-                    <li><a href="#home">home</a></li>
-                    <li><a href="#about">about</a></li>
-                    <li><a href="#service">services</a></li>
-                    <li><a href="#blog">blog</a></li>
-                    <li><a href="#contact">contact</a></li>
-                </ul>
-            </div> -->
-        </div>
-    </nav>
+    <!-- HEADER -->
     <header class="headerContent">
-        <div class="bannerContent">
-            <div class="container">
-                <div class="row-content">
-                    <div class="col-content">
-                        <div class="banner__info">
-                            <h2 class="banner__h2">Lorem ipsum dolor sit amet.</h2>
-                            <h6 class="banner__h6">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore commodi nisi magni atque quasi incidunt.</h6>
-                            <!-- <button><a href="#">read more...</a></button> -->
-                            <a class="banner__a" href="#">read more</a>
-                        </div>
-                        <div class="geometry-form">
-                            <div class="geometry-line geometry1"></div>
-                            <div class="geometry-line geometry2"></div>
-                            <!-- <div class="geometry-line geometry3"></div> -->
-                        </div>
-                    </div>
-                    <div class="col-content">
-                        <figure class="banner__figure">
-                            <img class="banner__figure--img" src="img/banner/img1.jpg" alt="">
-                            <!-- <figcaption>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim, blanditiis.</figcaption> -->
-                        </figure>
+        <div class="container">
+            <nav class="navContent">
+                <!-- BURGER LINES -->
+                <div class="header__nav--burger">
+                    <div class="line line1"></div>
+                    <div class="line line2"></div>
+                    <div class="line line3"></div>
+                </div>
+
+                <!-- MENU -->
+                <div class="header__nav--menu">
+                    <ul>
+                        <li><a href="">products</a></li>
+                        <li><a href="">design</a></li>
+                        <li><a href="">journal</a></li>
+                        <li><a href="">about</a></li>
+                        <li><a href="">contact</a></li>
+                    </ul>
+                    <hr>
+                    <!-- SOCIAL ICONS -->
+                    <div class="nav__menu--icons">
+                        <a href="#"><i class='bx bxl-instagram-alt' ></i></a>
+                        <a href="#"><i class='bx bxl-youtube' ></i></a>
+                        <a href="#"><i class='bx bxl-facebook' ></i></a>
                     </div>
                 </div>
-            </div>
+
+                <!-- LOGO -->
+                <div class="header__nav--logo">
+                    <a href="index.html"><span>amenity</span></a>
+                </div>
+                
+                <!-- ICONS -->
+                <div class="header__nav--icons">
+                    <a href=""><i class='bx bx-search-alt-2'></i></a>
+                    <a href=""><i class='bx bxs-cart'></i></a>
+                    <a href=""><i class='bx bx-user'></i></a>
+                </div>
+            </nav>
         </div>
     </header>
+    <!-- HOME - SECTION -->
+    <section class="sectionContent"></section>
+    <!-- MAIN -->
     <main class="mainContainer">
         <!-- ABOUT - SECTION -->
         <section id="about" class="sectionContent aboutContent">
@@ -113,7 +110,7 @@ RELEASE DATE:
                     </div>
                     <div class="col-container">
                         <figure>
-                            <img src="" alt="">
+                            <img src="img/" alt="">
                         </figure>
                         <div class="service-content">
                             <h3>Lorem ipsum dolor sit.</h3>
@@ -126,7 +123,7 @@ RELEASE DATE:
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
                         </div>
                         <figure>
-                            <img src="" alt="">
+                            <img src="img/" alt="">
                         </figure>
                     </div>
                     <!-- <div class="col-container"></div> -->
@@ -149,8 +146,8 @@ RELEASE DATE:
                         <h4>Lorem ipsum dolor sit amet consectetur.</h4>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda repellat sequi officia pariatur modi debitis!</p>
                     </div>
-                </div> -->
-            </div>
+                </div>
+            </div> -->
         </section>
         <!-- BLOG -->
         <section id="blog" class="sectionContent blogContent">
@@ -207,7 +204,7 @@ RELEASE DATE:
                     </div>
                     <div class="col-container">
                         <figure>
-                            <img src="" alt="">
+                            <img src="img/" alt="">
                         </figure>
                     </div>
                 </div>
@@ -286,6 +283,6 @@ RELEASE DATE:
             </div>
         </div>
     </footer>
-    <script src="js/navMenu.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
