@@ -35,7 +35,8 @@ Playfair Display:
     --color-wraper: #4C220C;
     --color-title:#829BB9;
     --color-frame: #DDD6D6;
-    --color-font: #807575de;
+    --color-font: #807575ee; /**/
+    --color-trans:#4c220caf; /**/
 
     /* FONTS */
     --size-xxs: 1.2rem;
@@ -76,7 +77,8 @@ time, mark, audio, video {
 /* AGREGE ESTA LINEA */
 html{
     background-color: var(--color-frame);
-    color: var(--color-font);
+    color: var(--color-trans);
+    /* color: var(--color-font); */
     font-size: 62.5%;
     scroll-behavior: smooth;
 }
@@ -100,6 +102,7 @@ h1, h2, h3, h4, h5, h6{
     font-size: var(--size-md);
     font-weight: bold;
     letter-spacing: 1px;
+    text-transform: capitalize;
 }
 ol, ul {
 	list-style: none;
@@ -150,11 +153,11 @@ table {
     ROW & COL
 ==================================================*/
 .row-container{
-    display: block;
+    /* display: block; */
     width: 100%;
 }
 .col-container{
-    display: block;
+    /* display: block; */
     width: 100%;
 }
 /* ===============================================
@@ -167,7 +170,7 @@ table {
     align-items: center;
     /* align-content: center; */
     position: relative;
-    z-index: 1000;
+    /* z-index: 1000; */
 }
 .navContent{
     /* outline: 1px solid red; */
@@ -286,6 +289,55 @@ table {
     color: var(--color-wraper);
     font-size: 2rem; /* recordar darle patron a los iconos por tamaño en cada resolucion */
 }
+
+/* ===============================================
+    HOME
+==================================================*/
+.homeContent{
+    /* outline: 1px solid red; */
+    height: 95vh;
+}
+/* articleContent{} */
+.home__article{
+    position: relative;
+    height: 100%;
+}
+/* .row-home{
+    position: relative;
+} */
+.home__article--text{
+    /* outline: 1px solid red; */
+    position: absolute;
+    top: 5%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    height: 94%;
+    /* align-items: ; */
+    /* justify-content: ; */
+    /* left: 2rem; */
+}
+.home__article--text h1{
+    font-size: var(--size-xl);
+    padding: 0 0 .5rem 2rem;
+}
+.home__article--text h6{
+    font-size: var(--size-xs);
+    padding: 1rem 0 1rem 2rem;
+}
+.home__article--text p{
+    padding: 1rem;
+    position: absolute;
+    bottom: 0;
+    /* align-self: flex-end; */
+    /* align-items: flex-end; */
+    /* align-content: flex-end; */
+    /* justify-items: end; */
+    /* justify-content: end; */
+    /* justify-self: self-end; */
+    /* margin: 2rem 0; */
+}
+
 
 /* ===============================================
     SECTIONS - MAIN
