@@ -26,6 +26,8 @@ Playfair Display:
     TEXT:
         font-family: 'Rubik', sans-serif;
 
+        
+
 */
 :root{
     /* COLOR */
@@ -143,11 +145,13 @@ table {
 /* ===============================================
 
 ==================================================*/
+.mainContent{
+    display: grid;
+}
 .sectionContent{
     /* outline: 1px solid red; */
     margin: 2.5rem 0;
 }
-
 /* .articleContent{} */
 /* ===============================================
     ROW & COL
@@ -338,103 +342,55 @@ table {
     /* margin: 2rem 0; */
 }
 
+/* ======================================================
+    PRODUCTS
+========================================================= */
+.productContent{}
+.product__article{}
 
-/* ===============================================
-    SECTIONS - MAIN
-==================================================*/
-.aboutContent{
-    /* rgb(250, 250, 250) */
-    /* color: #FAFAFA; */
-    color: rgba(250, 250, 250, 0.9);
-    position: relative;
-    background-color: rgba(49, 30, 11, 0.6);
-    padding: 40px 0;
-    /* margin-top: 10px; */
+/* ROW */
+.product__row{
+    display: grid;
+    grid-template: auto / auto;
+    gap: 3rem;
+    /* height: 100vh; */
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-around; */
 }
-/* COL ABOUT */
-.aboutContent .rowAbout .colAbout{
-    /* outline: 1px solid red; */
-    margin-top: 10px;
-    /* color: #FAFAFA; */
-    /* color: inherit; */
+.product__row h3{
+    font-size: var(--size-lg);
 }
-/* COL ABOUT 1 */
-.aboutContent .rowAbout .colAbout1{
-    background-color: rgba(248, 162, 41, 0.6);
-    border-radius: 10%;
-    width: 80%;
+/* COL */
+.product-col{
+    background-color: var(--color-frame);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    /* height: 50vh; */
+    /* position: relative; */
+}
+.product-col figure{
     margin: 0 auto;
-    /* border-radius: 300% 300% 300% 300% / 300% 300% 300% 300%; */
+    width: 80%;
 }
-/* FIGURE */
-.aboutContent .rowAbout .colAbout1 .about__figure{
-    position: relative;
-    left: 10vw;
-    width: 90%;
-    /* margin: 0 auto; */
-    /* object-fit: cover; */
+/* TEXT */
+.product__article--details{
+    /* background-color: #ffffff5d; */
+    padding: 1rem 2rem;
+    /* background-color: var(--color-back); */
+    /* position: absolute;
+    bottom: 5%; */
+    /* margin-top: -5rem; */
 }
-.aboutContent .rowAbout .colAbout1 .about__figure .about__img{
-    padding: 10px 0;
-    border-radius: 10%;
-    /* object-fit: cover; */
-    /* border-radius: 50%; */
-}
-/* COL ABOUT 2 */
-.aboutContent .rowAbout .colAbout2{
-    outline: 1px solid red;
-    /* #311E0D */
-    /* margin-top: 100px; */
-    /* color: #311E0D; */
-}
-.aboutContent .rowAbout .colAbout2 h3{
-    line-height: 1.0;
-    outline: 1px solid red;
-    padding: 15px;
-    text-transform: capitalize;
-    margin-bottom: 15px;
-}
-.aboutContent .rowAbout .colAbout2 p{
-    outline: 1px solid red;
-    padding: 5px;
-    margin-bottom: 10px;
-    /* margin-top: 20px; */
-    /* padding: 10px 0; */
-}
-.aboutContent .rowAbout .colAbout2 a{
-    margin-top: 10px;
-    /* rgb(49, 30, 13) */
-    /* rgb(49, 30, 11) */
-    margin-top: 10px;
-    padding: 10px;    
-    border-radius: 10px;
-    /* margin-left: 10px; */
-    color: inherit;
-    text-transform: capitalize;
-    background-color: rgba(248, 162, 41, 0.6);
-    /* padding: 10px; */
-    /* background-color: rgba(49, 30, 11, 0.6); */
-    /* opacity: 2; */
-}
-.aboutContent .rowAbout .colAbout2 a:hover{
-    background-color: rgba(49, 30, 11, 0.5);
-    transition: all 0.2s ease;
-
+.product__article--details h4{
+    /* font-size: var(--size-md); */
 }
 
-/* .aboutContent .rowAbout .colAbout1{} */
-/* .aboutContent .rowAbout .colAbout2{
-    margin-top: 20px;
-} */
-/* .aboutContent .rowAbout .colAbout2 h3{
-    padding: 10px;
-} */
-/* .aboutContent .rowAbout .colAbout2 p{
-    margin-top: 15px;
-} */
-/* .aboutContent .rowAbout .colAbout2 a{
-    margin-top: 50px;
-} */
+/* ======================================================
+    ABOUT
+========================================================= */
+.aboutContent{}
+.about__article{}
+
 
 /* ======================================================
     MEDIAQUERIES
@@ -469,12 +425,22 @@ table {
 }
 
 
-/* 
-FURNITURE DESIGN:
-    COLOR:
-    FONTS:
+/*
 
-COLORES DEL PROYECTO
+COLORES DEL PROYECTO:
+#AE661E
+#F7E4EA
+#FFF6CC
+#4C220C
+#829BB9
+#000000 --> este se agrego 
+#FFFFFF --> este se agrego 
+
+*/
+
+/*
+
+COLORES DEL PROYECTO - ALTERNATIVA (FUERON LOS PRIMEROS COLORES QUE SE OCUPARON)
 #8F642F
 #F8A229 -> #1D1B20
 #E3C392
@@ -482,4 +448,20 @@ COLORES DEL PROYECTO
 
 */
 
+/*
+
+OTROS COLORES (NO SON LOS ORIGINALES DEL PROYECTO):
+#9B4B2A
+#CCA9A7
+#E5B99E
+#4E4244
+#554F59
+
+*/
+
+
 /* ¿Definir tamaños de iconos en cada resolucion de pantalla? */
+/* cuidado al cambiar los estilos de las cajas "Content" como por ejemplo:
+    - ".articleContent" 
+    - ".sectionContent"
+*/
